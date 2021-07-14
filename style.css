@@ -1,0 +1,421 @@
+/* common style */
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.h2-tag{
+    font-size: 30px;
+    color: #474747;
+}
+.paragraph{
+    color: #6C6C6C;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* header section start */
+header{
+    background: #2D25A0;
+    height: 677px;
+    width: 100%;
+}
+
+/* nav bar section */
+
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 36px;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.login{
+    text-align: center;
+    padding: 5px 24px;
+    background: #E02C6D;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0;
+}
+
+.login a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* headline section start */
+
+.headline{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 27px;
+}
+.headline-text h1{
+    width: 485px;
+    height: 230px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.headline-image img{
+    width: 556px;
+    height: 456px;
+}
+.button{
+    display: inline-block;
+    margin-top: 27px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: 0;
+}
+.button a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* main section start  */
+
+/* artical section */
+.our-players{
+    margin: 70px 210px ;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.player{
+    padding: 15px ;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-image img{
+    width: 100%;
+}
+.player-details{
+    align-self: stretch;
+flex-grow: 0;
+margin: 16px 0px;
+}
+.player-details h2{
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;
+}
+.player-details p{
+    color: #6C6C6C;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* copa final section start */
+.copa-final{
+    background: #eeeeee;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 0;
+    
+}
+.result-headline{
+    text-align: center;
+    margin:0 30%;
+    padding-top: 30px;
+}
+
+.final-result{
+    display: flex;
+    margin: 0 20%;
+    justify-content: space-around;
+}
+.team{
+    
+    display: flex;
+    align-items: flex-end;
+}
+.result-1{
+    position: absolute;
+    text-align:left;
+    background-color: #2d3239;
+    padding-right: 150px;
+    padding-left: 30px;
+    padding-top: 10px;
+    right: 74%;
+    bottom: 7px;
+    z-index: -1;
+}
+
+.result-2{
+    position: absolute;
+    text-align: right;
+    background-color: #2d3239;
+    left: 69%;
+    padding-left: 200px;
+    padding-right: 30px;
+    padding-top: 10px;
+    z-index: -1;
+    bottom: 7px;
+}
+
+.result-1 h2,.result-1 p, .result-2 h2,.result-2 p{
+    margin-top: 0;
+    margin-bottom:10px;
+    color: white;
+}
+.score{
+    text-align: center;
+}
+.score h2{
+    font-size: 80px;
+    font-weight: 600;
+    color: #d0d0d0;
+    margin-bottom: 0;
+}
+.score h1{
+    font-size: 120px;
+    font-weight: 600;
+    color: #2d3239;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.score p{
+    font-size: 13px;
+}
+
+/* copa highlights section start */
+
+.copa-highlights{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 156px ;
+}
+.high-heading{
+    width: 469px;
+    height: 309px;
+}
+.high-heading h2{
+    font-weight: bold;
+    font-size: 48px; 
+    color:#2d3239;
+    margin-bottom: 0;
+}
+.high-image img{
+    width: 567px;
+height: 427px;
+}
+
+/* video section start */
+.more-videos{
+    margin: 150px 210px;
+}
+.more-videos h2{
+    text-align: center;
+}
+.more-videos p{
+    text-align: center;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap:40px ;
+    margin-top: 50px;
+}
+.video{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2d3239;
+
+}
+.video-frame{
+    position: relative;
+    overflow: hidden;
+}
+.video-image img{
+    width: 100%;
+    border-top-left-radius:5px ;
+    border-top-right-radius: 5px;
+
+}
+.video-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.video:hover .video-play{
+    display: block;
+}
+.video:hover .video-image img{
+    transform: scale(1.5);
+    transition: 1s ease-in-out;
+}
+.fa-youtube{
+    font-size: 100px;
+    color: red;
+}
+.video-text{
+    padding: 15px 10px;
+}
+.video-text a{
+    color: white;
+    text-decoration: none;
+}
+
+/* footer section start */
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-logo img{
+    width: 30%;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.icon li{
+    list-style: none;
+    margin: 10px 10px;
+    cursor: pointer;
+    
+}
+.icon li a{
+    color: #969BAB;;
+    background-color: #eeeeee;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 100%;
+}
+footer p{
+    text-align: center;
+}
+
+/* media query section */
+
+@media only screen and (max-width:688px) {
+
+    header{
+        height: 100%;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin: 0;
+    }
+    .headline{
+        flex-direction: column;
+    }
+    .button{
+        margin-bottom: 20px;
+    }
+    .headline-text h1{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+        font-size: 36px;
+        
+    }
+    .headline-image, .headline-text{
+       padding: 0 20px;
+    }
+ .headline-image img{
+    width: 100%;
+    height: 100%;
+     
+ }
+ .our-players{
+     margin: 20px 20px;
+ }
+    .players, .videos{
+        grid-template-columns: 1fr;
+    }
+   
+    .result-headline{
+        margin: 40px;
+    }
+    .final-result{
+        flex-direction: column;
+    }
+    .result-1, .result-2{
+      position:relative;
+      left: 0;
+      right: 0;
+      padding: 5px 40px;
+      text-align: center;
+    
+    }
+    .team, .copa-highlights{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+    .team-image{
+        order: 1;
+    }
+    .result-1{
+        order: 2;
+    }
+   
+    .high-heading{
+        text-align: center;
+    }
+    .high-heading,.high-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .more-videos{
+        margin: 0;
+    }
+    .videos{
+        margin: 30px;
+        grid-row-gap:30px ;
+    }
+    footer{
+        margin-top: 30px;
+    }
+    .icon li{
+    }
+}
